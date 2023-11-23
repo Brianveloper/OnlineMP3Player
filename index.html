@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ripple-wrapper">
+  <div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle medium shade4"></div>
+    <div class="circle small shade5"></div>
+  </div>
+
+  <div id="music-player" class="player">
+    <audio id="audio-element"></audio>
+    <div class="controls">
+      <button id="play-pause" onclick="togglePlayPause()">Play</button>
+      <button id="prev" onclick="playPreviousTrack()">Prev</button>
+      <button id="next" onclick="playNextTrack()">Next</button>
+    </div>
+    <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+    </div>
+    <div class="playlist">
+      <ul id="playlist"></ul>
+    </div>
+    <div class="waveform"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha384-RLjea6z5/YwhBtwR68HO6ayB8JzWxVugIjkC1e5eBb4DFFhLWpiUFRTt8ZR/RSJo" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
